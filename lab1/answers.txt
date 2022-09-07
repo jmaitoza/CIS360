@@ -1,0 +1,15 @@
+Task 1
+
+Time for 1000 integers: 0.000007 seconds 
+
+Time for 100K integers: 0.000007 seconds
+
+Time for 1 Million integers: 0.000009 seconds
+
+Task 2
+
+Time for 1000 integers: 0.000003 seconds
+
+Time for 100K integers: 0.000009 seconds
+
+Time for 1 Million integers: 0.000010 seconds
