@@ -27,7 +27,7 @@ int main (int argc, char *argv[])
     int keyArray[n];
     double time_spent = 0.0;
 
-    // initalize array with random numbers
+    // initalize array with random numbers NOT SORTED
     // srand(time(NULL));
     for (int i = 0; i < n; i++)
     {

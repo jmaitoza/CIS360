@@ -36,7 +36,7 @@ int main (int argc, char *argv[])
   x = rand()%1000;
   int keyArray[n];
 
-  //Populate array
+  //Populate array SORTED
   for (int i = 0; i < n; i++)
   {
     keyArray[i] = i+1;
