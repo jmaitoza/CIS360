@@ -10,11 +10,11 @@ int maxsubSlow(int arr[], int n) {
 
   // max found so far
   max = 0;
-  for (int j = 0; j < n - 1; j++) {
-    for (int k = j; k < n - 1; k++) {
+  for (int j = 0; j < n; j++) {
+    for (int k = j; k < n; k++) {
       // next partial sum we are computing
       sum = 0;
-      for (int i = j; i < k; i++) {
+      for (int i = j; i <= k; i++) {
         sum = sum + arr[i];
       }
       if (sum > max)
@@ -29,8 +29,11 @@ int main(int argc, char const *argv[]) {
   int *A;
   int temp = 0;
   double time_spent = 0.0;
+  //int *B; 
+  //B = (int *)malloc(3 * sizeof(int));
+  //int B = {1, 2 , 69};
 
-  n = 10000;
+  n = 10;
 
   // initialize array with N random numbers
   A = (int *)malloc(n * sizeof(int));
