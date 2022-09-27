@@ -23,10 +23,11 @@ int main()
    }
 
     printf("\nElements in reversed order: ");
-    while (!stack.empty()) // pop the stack and print out the elements
+    for (int j = length-1; j>= 0; j--) // pop the stack and print out the elements
     {
-        cout<<stack.top()<<" ";
-        stack.pop();
+       arr[j] = stack.top();
+       stack.pop();
+       cout << arr[j] << " ";
     }
 
     return 0;
