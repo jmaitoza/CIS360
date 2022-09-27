@@ -1,0 +1,150 @@
+Script started on Tue Sep 27 10:48:18 2022
+[91mError[0m: At line [33m1[0m column [33m6[0m.
+[1mCaused by[0m: expected an equals, found an identifier at line 1 column 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6n[35;1H                                                                                        [36;1H [38;5;2m                 ,MMMM.[39m           [38;5;4mHost[39m        [38;5;3m-[39m  joshuamaitoza@Joshuas-MacBook-Air.loca[37;1H [38;5;2m               .MMMMMM[39m            [38;5;4mMachine[39m     [38;5;3m-[39m  MacBookAir10,1                        [38;1H [38;5;2m               MMMMM,[39m             [38;5;4mKernel[39m      [38;5;3m-[39m  21.6.0                                [39;1H [38;5;3m     .;MMMMM:' MMMMMMMMMM;.[39m       [38;5;4mOS[39m          [38;5;3m-[39m  macOS 12.6.0 Monterey                 [40;1H [38;5;3m   MMMMMMMMMMMMNWMMMMMMMMMMM:[39m     [38;5;4mDE[39m          [38;5;3m-[39m  Aqua                                  [41;1H [38;5;3m .MMMMMMMMMMMMMMMMMMMMMMMMWM.[39m     [38;5;4mWM[39m          [38;5;3m-[39m  Quartz Compositor                     [42;1H [38;5;1m MMMMMMMMMMMMMMMMMMMMMMMMM.[39m       [38;5;4mPackages[39m    [38;5;3m-[39m  275 (Homebrew)                        [43;1H [38;5;1m;MMMMMMMMMMMMMMMMMMMMMMMM:[39m        [38;5;4mTerminal[39m    [38;5;3m-[39m  iTerm2 (Version 3.4.16)               [44;1H [38;5;1m:MMMMMMMMMMMMMMMMMMMMMMMM:[39m        [38;5;4mShell[39m       [38;5;3m-[39m  zsh                                   [45;1H [38;5;5m.MMMMMMMMMMMMMMMMMMMMMMMMM.[39m       [38;5;4mUptime[39m      [38;5;3m-[39m  7d 11h 43m                            [46;1H [38;5;5m MMMMMMMMMMMMMMMMMMMMMMMMMMM.[39m     [38;5;4mCPU[39m         [38;5;3m-[39m  Apple M1 (8)                          [47;1H [38;5;5m  .MMMMMMMMMMMMMMMMMMMMMMMMMM.[39m    [38;5;4mResolution[39m  [38;5;3m-[39m  2880x1800@60fps (as 1440x900)         [48;1H [38;5;4m    MMMMMMMMMMMMMMMMMMMMMMMM[39m      [38;5;4mBrightness[39m  [38;5;3m-[39m  42%                                   [49;1H [38;5;4m     ;MMMMMMMMMMMMMMMMMMMM.[39m       [38;5;4mCPU Load[39m    [38;5;3m-[39m  21%                                   [50;1H [38;5;4m       .MMMM,.    .MMMM,.[39m         [38;5;4mMemory[39m      [38;5;3m-[39m  7.4 GB/16.8 GB                        [51;1H                                   [38;5;4mBattery[39m     [38;5;3m-[39m  63% & Discharging                     [39m[49m[0m
+
+]1337;RemoteHost=joshuamaitoza@Joshuas-MacBook-Air.local]1337;CurrentDir=/Users/joshuamaitoza/repos/CIS360/lab3]1337;ShellIntegrationVersion=13;shell=zsh[1m[7m%[27m[1m[0m                                                                                        ]2;joshuamaitoza@Joshuas-MacBook-Air:~/repos/CIS360/lab3]1;..s/CIS360/lab3]133;D;0]1337;RemoteHost=joshuamaitoza@Joshuas-MacBook-Air.local]1337;CurrentDir=/Users/joshuamaitoza/repos/CIS360/lab3[0m[27m[24m[J[0m[38;5;240m[49m[39m]133;A
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m   [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/repos/[1m[38;5;254m[44m[38;5;255mCIS360[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mlab3[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m on   [30m master [30m?17[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m     [0m[49m[34m[0m[34m[44m[30m base[0m[30m[44m[44m[30m  [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[37m[0m[37m[44m[47m[30m at 10:48:20 AM[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;240m─╮
+[0m[38;5;240m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m]133;B[K[83C[0m[49m[39m[38;5;240m─╯[39m[85D[?1h=[?2004hl[32ml[39m[32ml[39m[90ms[39m[32ml[32ms[39m[?1l>[?2004l[?25l[A[0m[27m[24m[J]133;A[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m ]133;B[32mls[39m[K[?12l[?25h
+]2;ls -G]1;ls]133;C;taskA.cs   taskA.py   typescript
+[1m[7m%[27m[1m[0m                                                                                        ]2;joshuamaitoza@Joshuas-MacBook-Air:~/repos/CIS360/lab3]1;..s/CIS360/lab3]133;D;0]1337;RemoteHost=joshuamaitoza@Joshuas-MacBook-Air.local]1337;CurrentDir=/Users/joshuamaitoza/repos/CIS360/lab3[0m[27m[24m[J[0m[38;5;240m[49m[39m]133;A
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m   [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/repos/[1m[38;5;254m[44m[38;5;255mCIS360[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mlab3[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m on   [30m master [30m?17[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m     [0m[49m[34m[0m[34m[44m[30m base[0m[30m[44m[44m[30m  [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[37m[0m[37m[44m[47m[30m at 10:48:23 AM[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;240m─╮
+[0m[38;5;240m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m]133;B[K[83C[0m[49m[39m[38;5;240m─╯[39m[85D[?1h=[?2004hg[32mg[39m[32mg[39m[90mh repo clone scriptcs/scriptcs[39m[30D[32mg[32mi[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[1m[31mg[1m[31mi[0m[39m[90mt status[39m[8D[1m[31mg[1m[31mi[1m[31mt[0m[39m[0m[32mg[0m[32mi[0m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39ms[32mt[32m [39m[90ms[90mt[90ma[90mt[90mu[90ms[39m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39mst     [4mt[24m[4mt[4ms[24m[24mt[24ms [4mt[24m[24m [90mstatus[39m[39m [39m [39m [39m [39m [39m [90m status[39m[32mg[32mi[39m[39m [39m [39m [39m [39m [39m [39m [39m [8D[1m[31mg[1m[31mi[0m[39m[90mt status[39m[8D[1m[31mg[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[0m[32mg[39m[32mg[39m[90mh repo clone scriptcs/scriptcs[39m[30D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31Dg[32mg[39m[32mg[39m[90mh repo clone scriptcs/scriptcs[39m[30D[32mg[32mi[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[1m[31mg[1m[31mi[0m[39m[90mt status[39m[8D[1m[31mg[1m[31mi[1m[31mt[0m[39m[0m[32mg[0m[32mi[0m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39ms[32mt[32m [39m[90ms[90mt[90ma[90mt[90mu[90ms[39m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39ms[1C[90mt[90ma[90mt[90mu[90ms[39m[39mt[39ma[39mt[39mu[39ms[1C[90ma[90mt[90mu[90ms[39m[39ma[39mt[39mu[39ms[1C[90mt[90mu[90ms[39m[39mt[39mu[39ms[1C[90mu[90ms[39m[39mu[39ms[1C[90ms[39m[39ms[1C[?1l>[?2004l[?25l[A[A[0m[27m[24m[J]133;A[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m ]133;B[32mgit[39m status[K[?12l[?25h
+]2;git status]1;git]133;C;On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m../lab1/Task 1[m
+	[31m../lab1/bin[m
+	[31m../lab1/binary[m
+	[31m../lab1/seq[m
+	[31m../lab1/seq_search.c[m
+	[31m../lab2.zip[m
+	[31m../lab2/.vscode/[m
+	[31m../lab2/faster[m
+	[31m../lab2/faster.dSYM/[m
+	[31m../lab2/fastest[m
+	[31m../lab2/fastest.dSYM/[m
+	[31m../lab2/lab2_analysis.xlsx[m
+	[31m../lab2/maxsubslow[m
+	[31m../lab2/maxsubslow.dSYM/[m
+	[31m../lab2/slow[m
+	[31m../lab2/slow.dSYM/[m
+	[31m./[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[1m[7m%[27m[1m[0m                                                                                        ]2;joshuamaitoza@Joshuas-MacBook-Air:~/repos/CIS360/lab3]1;..s/CIS360/lab3]133;D;0]1337;RemoteHost=joshuamaitoza@Joshuas-MacBook-Air.local]1337;CurrentDir=/Users/joshuamaitoza/repos/CIS360/lab3[0m[27m[24m[J[0m[38;5;240m[49m[39m]133;A
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m   [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/repos/[1m[38;5;254m[44m[38;5;255mCIS360[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mlab3[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m on   [30m master [30m?17[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m     [0m[49m[34m[0m[34m[44m[30m base[0m[30m[44m[44m[30m  [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[37m[0m[37m[44m[47m[30m at 10:48:31 AM[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;240m─╮
+[0m[38;5;240m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m]133;B[K[83C[0m[49m[39m[38;5;240m─╯[39m[85D[?1h=[?2004hg[32mg[39m[32mg[39m[90mit status[39m[9D[32mg[32mi[39m[1m[31mg[1m[31mi[0m[39m[39mt[39m [39ms[39mt[39ma[39mt[39mu[39ms[8D[1m[31mg[1m[31mi[1m[31mt[0m[39m[90m [90ms[90mt[90ma[90mt[90mu[90ms[39m[0m[32mg[0m[32mi[0m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39ms[32mg[32mi[39m[39m        [8D[1m[31mg[1m[31mi[0m[39m[90mt status[39m[8D[1m[31mg[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[0m[32mg[39m[32mg[39m[90mit status[39m[9D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10Dg[32mg[39m[32mg[39m[90mit status[39m[9D[32mg[32mi[39m[1m[31mg[1m[31mi[0m[39m[39mt[39m [39ms[39mt[39ma[39mt[39mu[39ms[8D[1m[31mg[1m[31mi[1m[31mt[0m[39m[90m [90ms[90mt[90ma[90mt[90mu[90ms[39m[0m[32mg[0m[32mi[0m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39ms[32mt[32m [39m[90ms[90mt[90ma[90mt[90mu[90ms[39m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39msl     [90mog[39m[39mo[39mg[1C[?1l>[?2004l[?25l[A[A[0m[27m[24m[J]133;A[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m ]133;B[32mgit[39m log[K[?12l[?25h
+]2;git log]1;git]133;C;[?1049h[?1h=[33mcommit b3bd54430396f98bf168ddcb9a8bbe40383b478e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m[m
+Author: Joshua Maitoza <jmaitoza@umassd.edu>[m
+Date:   Fri Sep 23 12:14:42 2022 -0400[m
+[m
+    finished math[m
+[m
+[33mcommit d53162e8c6d9b3272180780bcc13ca5ea3c53fba[m[m
+Author: Joshua Maitoza <jmaitoza@umassd.edu>[m
+Date:   Thu Sep 22 15:29:02 2022 -0400[m
+[m
+    finished math except for little bit[m
+[m
+[33mcommit 28d55547668e0a983ba258c7ffd823bba901b23d[m[m
+Author: Joshua Maitoza <jmaitoza@umassd.edu>[m
+Date:   Tue Sep 20 15:54:48 2022 -0400[m
+[m
+    finished, need joshypoo to look at it[m
+[m
+[33mcommit a7f29ee8f720ee4dbbbc103184b789562e227eec[m[m
+Author: Joshua Maitoza <jmaitoza@umassd.edu>[m
+Date:   Tue Sep 20 13:22:33 2022 -0400[m
+[m
+    started lab2[m
+[m
+[33mcommit 3da294a23b5af64e53cea22297e602b0a4738543[m[m
+Author: Joshua Maitoza <jmaitoza@umassd.edu>[m
+Date:   Mon Sep 19 10:03:23 2022 -0400[m
+[m
+    byebye csharp[m
+[m
+[33mcommit 98529a477a0195a2133010cf5117257151acf4a3[m[m
+Author: Joshua Maitoza <60358495+jmaitoza@users.noreply.github.com>[m
+Date:   Thu Sep 15 09:58:37 2022 -0400[m
+[m
+    lab2 initial commit csharp[m
+[m
+[33mcommit 7b10949a1eb683f10cd02eeadb50f059d30136ef[m[m
+Author: Joshua Maitoza <60358495+jmaitoza@users.noreply.github.com>[m
+Date:   Thu Sep 15 09:47:44 2022 -0400[m
+[m
+    initial lab2 commit[m
+[m
+[33mcommit ffddcf1a0fb89f6c9cd7de8a35dd16c3adc1b09f[m[m
+Author: Joshua Maitoza <jmaitoza@umassd.edu>[m
+Date:   Wed Sep 14 14:33:38 2022 -0400[m
+[m
+    updated comments[m
+[m
+[33mcommit d753d23e484ea30bcc193469b297aa1aed456c94[m[m
+Author: Joshua Maitoza <jmaitoza@umassd.edu>[m
+Date:   Wed Sep 7 13:18:03 2022 -0400[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                        ]2;joshuamaitoza@Joshuas-MacBook-Air:~/repos/CIS360/lab3]1;..s/CIS360/lab3]133;D;0]1337;RemoteHost=joshuamaitoza@Joshuas-MacBook-Air.local]1337;CurrentDir=/Users/joshuamaitoza/repos/CIS360/lab3[0m[27m[24m[J[0m[38;5;240m[49m[39m]133;A
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m   [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mr[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCIS360[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mlab3[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m on   [30m master [30m?17[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m
+[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m]133;B[K[83C[0m[49m[39m[38;5;240m─╯[39m[85D[?1h=[?2004hg[32mg[39m[32mg[39m[90mit log[39m[32mg[32mi[39m[1m[31mg[1m[31mi[0m[39m[39mt[39m [39ml[39mo[39mg[1m[31mg[1m[31mi[1m[31mt[0m[39m[90m [90ml[90mo[90mg[39m[0m[32mg[0m[32mi[0m[32mt[39m[39m [39ml[39mo[39mg[32mg[32mi[39m[39m     [1m[31mg[1m[31mi[0m[39m[90mt log[39m[1m[31mg[0m[39m[0m[39m [39m [39m [39m [39m [39m [0m[32mg[39m[32mg[39m[90mit log[39m[39m [39m [39m [39m [39m [39m [39m c[1m[31mc[0m[39m[1m[31mc[0m[39m[90md Downloads/scriptcs-scriptcs-ceb8443[39m[37D[1m[31mc[1m[31md[0m[39m[0m[32mc[0m[32md[39m[39m [39mD[39mo[39mw[39mn[39ml[39mo[39ma[39md[39ms[39m/[39ms[39mc[39mr[39mi[39mp[39mt[39mc[39ms[39m-[39ms[39mc[39mr[39mi[39mp[39mt[39mc[39ms[39m-[39mc[39me[39mb[39m8[39m4[39m4[39m3[36D[32mc[32md[32m [39m[90mD[90mo[90mw[90mn[90ml[90mo[90ma[90md[90ms[90m/[90ms[90mc[90mr[90mi[90mp[90mt[90mc[90ms[90m-[90ms[90mc[90mr[90mi[90mp[90mt[90mc[90ms[90m-[90mc[90me[90mb[90m8[90m4[90m4[90m3[39m[35D[32mc[32md[39m[39m [39mD[39mo[39mw[39mn[39ml[39mo[39ma[39md[39ms[39m/[39ms[39mc[39mr[39mi[39mp[39mt[39mc[39ms[39m-[39ms[39mc[39mr[39mi[39mp[39mt[39mc[39ms[39m-[39mc[39me[39mb[39m8[39m4[39m4[39m3[35D.                                  [34D[4m.[24m[90m.[39m[4m.[39m[4m.[24m[?1l>[?2004l[?25l[A[A[0m[27m[24m[J]133;A[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m ]133;B[32mcd[39m [4m..[24m[K[?12l[?25h
+]2;cd ..]1;cd]133;C;[1m[7m%[27m[1m[0m                                                                                        ]2;joshuamaitoza@Joshuas-MacBook-Air:~/repos/CIS360]1;~/repos/CIS360]133;D;0]1337;RemoteHost=joshuamaitoza@Joshuas-MacBook-Air.local]1337;CurrentDir=/Users/joshuamaitoza/repos/CIS360[0m[27m[24m[J[0m[38;5;240m[49m[39m]133;A
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m   [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/repos/[1m[38;5;254m[44m[38;5;255mCIS360[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m on   [30m master [30m?17[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m          [0m[49m[34m[0m[34m[44m[30m base[0m[30m[44m[44m[30m  [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[37m[0m[37m[44m[47m[30m at 10:49:02 AM[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;240m─╮
+[0m[38;5;240m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m]133;B[K[83C[0m[49m[39m[38;5;240m─╯[39m[85D[?1h=[?2004hl[32ml[39m[32ml[39m[90ms[39m[32ml[32ms[39m[?1l>[?2004l[?25l[A[A[0m[27m[24m[J]133;A[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m ]133;B[32mls[39m[K[?12l[?25h
+]2;ls -G]1;ls]133;C;README.md [1m[36mlab1[39;49m[0m      [1m[36mlab2[39;49m[0m      lab2.zip  [1m[36mlab3[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                        ]2;joshuamaitoza@Joshuas-MacBook-Air:~/repos/CIS360]1;~/repos/CIS360]133;D;0]1337;RemoteHost=joshuamaitoza@Joshuas-MacBook-Air.local]1337;CurrentDir=/Users/joshuamaitoza/repos/CIS360[0m[27m[24m[J[0m[38;5;240m[49m[39m]133;A
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m   [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/repos/[1m[38;5;254m[44m[38;5;255mCIS360[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m on   [30m master [30m?17[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m          [0m[49m[34m[0m[34m[44m[30m base[0m[30m[44m[44m[30m  [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[37m[0m[37m[44m[47m[30m at 10:49:03 AM[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;240m─╮
+[0m[38;5;240m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m]133;B[K[83C[0m[49m[39m[38;5;240m─╯[39m[85D[?1h=[?2004hg[32mg[39m[32mg[39m[90mit log[39m[32mg[32mi[39m[1m[31mg[1m[31mi[0m[39m[39mt[39m [39ml[39mo[39mg[1m[31mg[1m[31mi[1m[31mt[0m[39m[90m [90ml[90mo[90mg[39m[0m[32mg[0m[32mi[0m[32mt[39m[39m [39ml[39mo[39mg[32mt[32m [39m[90ml[90mo[90mg[39m[32mt[39m[39m [39ml[39mo[39mg[1C[90mo[90mg[39m[4ml[24m[39mo[39mg[24m   [90mlog[39m[39ms[39m [39m [90mtatus[39m[39mt[39ma[39mt[39mu[39ms[1C[90mt[90mu[90ms[39m[39mt[39mu[39ms[1C[90mu[90ms[39m[39mu[39ms[1C[90ms[39m[39ms[1C[?1l>[?2004l[?25l[A[A[0m[27m[24m[J]133;A[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m ]133;B[32mgit[39m status[K[?12l[?25h
+]2;git status]1;git]133;C;On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mlab1/Task 1[m
+	[31mlab1/bin[m
+	[31mlab1/binary[m
+	[31mlab1/seq[m
+	[31mlab1/seq_search.c[m
+	[31mlab2.zip[m
+	[31mlab2/.vscode/[m
+	[31mlab2/faster[m
+	[31mlab2/faster.dSYM/[m
+	[31mlab2/fastest[m
+	[31mlab2/fastest.dSYM/[m
+	[31mlab2/lab2_analysis.xlsx[m
+	[31mlab2/maxsubslow[m
+	[31mlab2/maxsubslow.dSYM/[m
+	[31mlab2/slow[m
+	[31mlab2/slow.dSYM/[m
+	[31mlab3/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[1m[7m%[27m[1m[0m                                                                                        ]2;joshuamaitoza@Joshuas-MacBook-Air:~/repos/CIS360]1;~/repos/CIS360]133;D;0]1337;RemoteHost=joshuamaitoza@Joshuas-MacBook-Air.local]1337;CurrentDir=/Users/joshuamaitoza/repos/CIS360[0m[27m[24m[J[0m[38;5;240m[49m[39m]133;A
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m   [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/repos/[1m[38;5;254m[44m[38;5;255mCIS360[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m on   [30m master [30m?17[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m          [0m[49m[34m[0m[34m[44m[30m base[0m[30m[44m[44m[30m  [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[37m[0m[37m[44m[47m[30m at 10:49:07 AM[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;240m─╮
+[0m[38;5;240m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m]133;B[K[83C[0m[49m[39m[38;5;240m─╯[39m[85D[?1h=[?2004hg[32mg[39m[32mg[39m[90mit status[39m[9D[32mg[32mi[39m[1m[31mg[1m[31mi[0m[39m[39mt[39m [39ms[39mt[39ma[39mt[39mu[39ms[8D[1m[31mg[1m[31mi[1m[31mt[0m[39m[90m [90ms[90mt[90ma[90mt[90mu[90ms[39m[0m[32mg[0m[32mi[0m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39ms[32mt[32m [39m[90ms[90mt[90ma[90mt[90mu[90ms[39m[32mt[39m[39m [39ms[39mt[39ma[39mt[39mu[39msa     [90mdd lab3[39m[39md[39md[39m [39ml[39ma[39mb[39m3[1C[90m [90ml[90ma[90mb[90m3[39m[39m [39ml[39ma[39mb[39m3[1C[90ml[90ma[90mb[90m3[39m[39ml[39ma[39mb[39m3
