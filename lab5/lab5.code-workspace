@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../lab4"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"__config": "cpp",
+			"__hash_table": "cpp",
+			"__node_handle": "cpp",
+			"cstdlib": "cpp",
+			"optional": "cpp",
+			"unordered_map": "cpp"
+		}
+	}
+}
