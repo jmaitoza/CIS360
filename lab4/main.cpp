@@ -80,48 +80,13 @@ void inOrderTraverse(BinaryTreeNode *root)
         curr = curr->right;
     }
 }
+ 
 
-void expressionTree(char pfixExp[])
-{
-    //create an empty stack
-    stack<BinaryTreeNode*> expTree; //stack
-
-    // read in each character of the postfix expression
-    for (int i = 0; i < sizeof(pfixExp); ++i)
-    {
-        // if the character is an operand
-        if (pfixExp[i] >= '0' && pfixExp[i] <= '9')
-        {
-            // create a one node tree
-            BinaryTreeNode *node = new BinaryTreeNode;
-            node->data = pfixExp[i];
-            node->left = NULL;
-            node->right = NULL;
-            // push the node onto the stack
-            expTree.push(node);
-        }
-        // if the character is an operator
-        else
-        {
-            // create a new node
-            BinaryTreeNode *node = new BinaryTreeNode;
-            node->data = pfixExp[i];
-            // pop the top two nodes from the stack
-            node->right = expTree.top(); //T1 (popped first)
-            expTree.pop();
-            node->left = expTree.top(); //T2 (popped second)
-            expTree.pop();
-            // push the new node onto the stack
-            expTree.push(node);
-        }
-    }
-    
-}
 
 int main(int argc, char const *argv[])
 {
-    // char pfixExp[] = {'2', '3', '4', '*', '+', '5', '6', '*', '+', '9', '7', '-', '*'};  
-    char pfixExp[] = {'5', '6', '2', '/', '+', '3', '1', '-', '*', '4', '2', '*', '+'};
+     char pfixExp[] = {'2', '3', '4', '*', '+', '5', '6', '*', '+', '9', '7', '-', '*'};  
+    //char pfixExp[] = {'5', '6', '2', '/', '+', '3', '1', '-', '*', '4', '2', '*', '+'};
     stack<BinaryTreeNode*> expTree; //stack
 
     
@@ -138,7 +103,7 @@ int main(int argc, char const *argv[])
             node->right = NULL;
             // push the node onto the stack
             expTree.push(node);
-        }
+       }
         // if the character is an operator
         else
         {
@@ -154,10 +119,13 @@ int main(int argc, char const *argv[])
             expTree.push(node);
         }
     }
+    cout << "Post Order: ";
     postOrderTraverse(expTree.top());
     cout << endl;
+    cout << "Pre Order: ";
     preOrderTraverse(expTree.top());
     cout << endl;
+    cout << "In Order: ";
     inOrderTraverse(expTree.top());
     cout << endl;
     

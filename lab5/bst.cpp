@@ -7,6 +7,7 @@ struct BinaryTreeNode
     int data;
     BinaryTreeNode *left;
     BinaryTreeNode *right;
+    int nv;
 
     // constructor
     BinaryTreeNode(int data)
@@ -14,6 +15,7 @@ struct BinaryTreeNode
         this->data = data;
         left = nullptr;
         right = nullptr;
+        nv = 0;
     }
 };
 
@@ -30,6 +32,7 @@ public:
     BinaryTreeNode * Insert(BinaryTreeNode *node,int newKey);
     void PrintTree(BinaryTreeNode *node);
     void RangeQuery(BinaryTreeNode *node, int keyLow, int keyHigh);
+    void IndexSearch(BinaryTreeNode *node, int index);
 };
 
 BinaryTreeNode * BST::Insert(BinaryTreeNode *node, int newKey) {
@@ -113,11 +116,21 @@ void BST::RangeQuery(BinaryTreeNode *node, int keyLow, int keyHigh) {
 
 }
 
+void BST::IndexSearch(BinaryTreeNode *node, int index) {
+
+    // assign total num of elements in each nodes subtree
+    if (node->left != nullptr)
+    {
+        node->left->nv = node->left->nv + 1;
+    }
+
+
+}
 
 
 int main(int argc, char const *argv[])
 {
-    //int arr[] = {6,4,8,2,7,3,1, 69};
+    //int arr[] = {6,4,8,2,7,3,1,69};
     int arr[] = {22,33,44,55,66,99};
     int len = sizeof(arr)/sizeof(arr[0]);
     // initialize tree class
