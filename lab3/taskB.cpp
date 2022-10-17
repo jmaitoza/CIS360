@@ -7,7 +7,6 @@ int main(int argc, char const *argv[])
 {
     int length;
     int arr[] = {1,2,3,4,5};
-    int temp[5];
     queue<int> queue;
 
     printf("Elements in non-reversed order: ");
@@ -26,7 +25,7 @@ int main(int argc, char const *argv[])
     printf("\nElements in reversed order: ");
     for (int j = length-1; j >= 0; j--)
     {
-        temp[j] = queue.front();
+        arr[j] = queue.front();
         queue.pop(); // dequeue
         cout << arr[j] << " ";
     }

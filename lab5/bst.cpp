@@ -32,7 +32,7 @@ public:
     BinaryTreeNode * Insert(BinaryTreeNode *node,int newKey);
     void PrintTree(BinaryTreeNode *node);
     void RangeQuery(BinaryTreeNode *node, int keyLow, int keyHigh);
-    void IndexSearch(BinaryTreeNode *node, int index);
+    void TreeSelect(BinaryTreeNode *node, int index);
 };
 
 BinaryTreeNode * BST::Insert(BinaryTreeNode *node, int newKey) {
@@ -48,6 +48,7 @@ BinaryTreeNode * BST::Insert(BinaryTreeNode *node, int newKey) {
     if (node->data > newKey) //insert in left subtree
     {
         node->left = Insert(node->left, newKey);
+        node->nv++; //increment node value for TreeSelect method
     }
     else if (node->data < newKey) //insert in right subtree
     {
@@ -116,22 +117,36 @@ void BST::RangeQuery(BinaryTreeNode *node, int keyLow, int keyHigh) {
 
 }
 
-void BST::IndexSearch(BinaryTreeNode *node, int index) {
-
-    // assign total num of elements in each nodes subtree
-    if (node->left != nullptr)
-    {
-        node->left->nv = node->left->nv + 1;
-    }
-
-
+// return the item with the ith smallest key
+void BST::TreeSelect(BinaryTreeNode *node, int index) {
+   if (node == nullptr)
+   {
+       return;
+   }
+   int w = node->nv + 1;
+   // check if current node is the ith smallest key
+   if (w == index)
+   {
+       cout << "The item with the " << index << "th smallest key is " << node->data << endl;
+   }
+   // check if index is in left subtree
+   else if (index < w)
+   {
+       TreeSelect(node->left, index);
+   }
+   // check if index is in right subtree
+   else
+   {
+       TreeSelect(node->right, index - w);
+   }
 }
 
 
 int main(int argc, char const *argv[])
 {
     //int arr[] = {6,4,8,2,7,3,1,69};
-    int arr[] = {22,33,44,55,66,99};
+    //int arr[] = {22,33,44,55,66,99};
+    int arr[] = {44,23,63,17,33,51,74,8,20,48,58,71,46,72};
     int len = sizeof(arr)/sizeof(arr[0]);
     // initialize tree class
     BST T;
@@ -148,5 +163,8 @@ int main(int argc, char const *argv[])
     cout << "Range: {";
     T.RangeQuery(node, 30, 70);
     cout << "}" << endl;
+
+    //tree select
+    T.TreeSelect(node, 6);
     return 0;
 }
