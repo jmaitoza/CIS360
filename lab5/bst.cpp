@@ -29,6 +29,7 @@ public:
     // functions
     BinaryTreeNode * Insert(BinaryTreeNode *node,int newKey);
     void PrintTree(BinaryTreeNode *node);
+    void RangeQuery(BinaryTreeNode *node, int keyLow, int keyHigh);
 };
 
 BinaryTreeNode * BST::Insert(BinaryTreeNode *node, int newKey) {
@@ -88,11 +89,36 @@ void BST::PrintTree(BinaryTreeNode *node) {
     }
 }
 
+// Range Query on BST
+void BST::RangeQuery(BinaryTreeNode *node, int keyLow, int keyHigh) {
+    if (node == nullptr)
+    {
+        return;
+    }
+    // check if node is in range
+    if (node->data <= keyHigh && node->data >= keyLow)
+    {
+        RangeQuery(node->left, keyLow, keyHigh);
+        RangeQuery(node->right, keyLow, keyHigh);
+        cout << node->data << ", ";
+    }
+    else if (node->data < keyLow)
+    {
+        RangeQuery(node->right, keyLow, keyHigh);
+    }
+    else if (node->data > keyHigh)
+    {
+        RangeQuery(node->left, keyLow, keyHigh);
+    }
+
+}
+
 
 
 int main(int argc, char const *argv[])
 {
-    int arr[] = {6,4,8,2,7,3,1, 69};
+    //int arr[] = {6,4,8,2,7,3,1, 69};
+    int arr[] = {22,33,44,55,66,99};
     int len = sizeof(arr)/sizeof(arr[0]);
     // initialize tree class
     BST T;
@@ -105,5 +131,9 @@ int main(int argc, char const *argv[])
     }
     // print tree
     T.PrintTree(node);
+    cout << endl;
+    cout << "Range: {";
+    T.RangeQuery(node, 30, 70);
+    cout << "}" << endl;
     return 0;
 }
