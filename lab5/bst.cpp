@@ -1,7 +1,9 @@
 /*
  * Message to TA Josh. I don't know how much C++ you know, but I'm tying to learn it as I go, as I need to use it in senior design.
  * If you see any egregious errors, please let me know or anything that is bad C++ practice. Thanks!
+ * Also if you know CMake and ever have the chance to explain it better that would be great.
  */
+
 #include <iostream>
 #include <string>
 using namespace std;
