@@ -1,3 +1,7 @@
+/*
+ * Message to TA Josh. I don't know how much C++ you know, but I'm tying to learn it as I go, as I need to use it in senior design.
+ * If you see any egregious errors, please let me know or anything that is bad C++ practice. Thanks!
+ */
 #include <iostream>
 #include <string>
 using namespace std;
@@ -121,6 +125,7 @@ void BST::RangeQuery(BinaryTreeNode *node, int keyLow, int keyHigh) {
 void BST::TreeSelect(BinaryTreeNode *node, int index) {
    if (node == nullptr)
    {
+       cout << "Error - index out of range" << endl;
        return;
    }
    int w = node->nv + 1;
@@ -146,7 +151,9 @@ int main(int argc, char const *argv[])
 {
     //int arr[] = {6,4,8,2,7,3,1,69};
     //int arr[] = {22,33,44,55,66,99};
-    int arr[] = {44,23,63,17,33,51,74,8,20,48,58,71,46,72};
+//    int arr[] = {44,23,63,17,33,51,74,8,20,48,58,71,46,72, 79, 83, 40, 2, 69, 7};
+    int arr[] = {11, 3, 54,4, 55, 71, 43, 66, 22, 14, 12, 98, 39, 48, 1, 5, 81, 51, 93, 70};
+
     int len = sizeof(arr)/sizeof(arr[0]);
     // initialize tree class
     BST T;
@@ -165,6 +172,6 @@ int main(int argc, char const *argv[])
     cout << "}" << endl;
 
     //tree select
-    T.TreeSelect(node, 6);
+    T.TreeSelect(node, 8);
     return 0;
 }
