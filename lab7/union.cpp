@@ -4,6 +4,7 @@
     find(e): Return the name of the set containing e
 */
 #include <iostream>
+#include <unordered_map>
 using namespace std;
 
 class UnionFindSet
