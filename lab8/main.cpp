@@ -1,6 +1,8 @@
 #include <iostream>
 #include <utility>
 #include <random>
+#include <iomanip>
+
 using namespace std;
 
 int medianOf3(int arr[3])
@@ -45,35 +47,71 @@ int partition(int a[], int low, int high)
     return i;
 }
 
-void quicksort(int a[], int low, int high)
+void insertionSort(int a[], int size)
+{
+    for (int i = 1; i < size; i++)
+    {
+        int key = a[i];
+        int j = i-1;
+
+        while (j >= 0 && a[j] > key)
+        {
+            a[j+1] = a[j];
+            j--;
+        }
+        a[j+1] = key;
+    }
+}
+
+void quicksort(int a[], int low, int high, int size)
 {
     if (low < high)
     {
-        int pivotpoint = partition(a, low, high);
-        quicksort(a, low, pivotpoint - 1);
-        quicksort(a, pivotpoint + 1, high);
+        if (size <= 10)
+        {
+            cout << endl << "Insertion sort called" << endl;
+            insertionSort(a, size);
+        }
+        else
+        {
+            int pivotpoint = partition(a, low, high);
+            quicksort(a, low, pivotpoint - 1,size);
+            quicksort(a, pivotpoint + 1, high,size);
+        }
     }
 }
 
 int main()
 {
     // create dynamic array
-    int a[10];
+    time_t start, end;
+    int size = 10;
+    int a[size];
     std::random_device rd;
-    std::mt19937 gen(rd());
+    std::mt19937 mt(rd());
     std::uniform_int_distribution<> dis(1, 100);
     // fill array with random numbers
     for (int & i : a)
-        i = dis(gen);
+        i = dis(mt);
 
     cout << "Unsorted array: ";
     for (int &i : a)
         std::cout << i << " ";
 
-    quicksort(a, 0, 9);
-    cout << endl << "Sorted array: ";
+    start = time(&start);
+    ios_base::sync_with_stdio(false);
+    quicksort(a, 0, 9,size);
+    end = time(&end);
+    if (size > 10)
+        cout << endl << "Quicksort called" << endl;
+    cout << "Sorted array: ";
     for (int &i : a)
         std::cout << i << " ";
+
+    auto time_taken = double(end - start);
+    cout << endl << "Time taken by program is : " << fixed
+         << time_taken << setprecision(5);
+    cout << " sec " << endl;
 
     return 0;
 }
