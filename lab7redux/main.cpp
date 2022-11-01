@@ -8,16 +8,18 @@ class UnionSet
     int *parent;
     int *size;
     int depth;
-    int depthCount;
-public:
+//    int depthCount;
 
 public:
 
     void makeSet(int n);
+    int Find2(int e);
     int Find(int e);
     void Union(int A, int B);
-
+    void Union2(int A, int B);
     void printSet(UnionSet &s, int n);
+    void printSet2(UnionSet &s, int n);
+    int getDepth(int e);
 
 //    int depthCount;
 };
@@ -32,17 +34,29 @@ void UnionSet::makeSet(int n) {
     }
 }
 
-int UnionSet::Find(int e) {
+int UnionSet::Find2(int e) {
 //    depthCount = 0;
-    if (e == parent[e])
+    int root = e;
+    while (parent[root] != root)
     {
-        return e;
+        root = parent[root];
     }
-    else
+//    else
+//    {
+//        return parent[e] = Find2(parent[e]); //path compression
+//    }
+    return parent[root];
+}
+
+int UnionSet::getDepth(int e) {
+    int depthcount = 0;
+    int current = e;
+    while (parent[current] != current)
     {
-        depthCount++;
-        return parent[e] = Find(parent[e]); //path compression
+        current = parent[current];
+        depthcount++;
     }
+    return depthcount;
 }
 
 void UnionSet::Union(int A, int B)
@@ -50,7 +64,7 @@ void UnionSet::Union(int A, int B)
     int x = Find(A);
     int y = Find(B);
 
-    if (size[x] < size[y])
+    if (size[x] < size[y]) //keep this one for heuristics
     {
         parent[x] = y;
         size[y] += size[x];
@@ -62,21 +76,71 @@ void UnionSet::Union(int A, int B)
     }
 }
 
-//void UnionSet::printSet(UnionSet &s, int n) {
-//    // print format: node (root, depth)
-//    cout << n << " (" << s.Find(n) << ", " << depthCount << ")" << endl;
-//}
+void UnionSet::Union2(int A, int B)
+{
+    int x = Find2(A);
+    int y = Find2(B);
+
+
+        parent[y] = x;
+        size[x] += size[y];
+        cout << "X:" << x << "Y:" << y << endl;
+}
+
+void UnionSet::printSet(UnionSet &s, int n) {
+    // print format: node (root, depth)
+    cout << n << " (" << s.Find(n) << ", " << getDepth(n) << ")" << endl;
+}
+
+void UnionSet::printSet2(UnionSet &s, int n)
+{
+    // print format: node (root, depth)
+    cout << n << " (" << s.Find2(n) << ", " << getDepth(n) << ")" << endl;
+}
+
+int UnionSet::Find(int e)
+{
+    int root = e;
+    while (parent[root] != root)
+    {
+        root = parent[root];
+    }
+
+    int z = e;
+    int w = 0;
+    while(parent[z] != z) //path compression
+    {
+        w = z;
+        z = parent[z];
+        parent[w] = root;
+    }
+    return parent[root];
+}
 
 int main()
 {
     UnionSet asshole{};
+    UnionSet set2{};
     asshole.makeSet(50);
-    cout << "cringe" << endl;
-    for (int i = 0; i < 50; i++)
+    cout << "Version 1" << endl;
+    for (int i = 0; i < 45; i++)
     {
         asshole.Union(i, i + 5);
-//        asshole.printSet(asshole, i);
-//        asshole.depthCount = 0;
+    }
+    for (int i = 0; i < 50; i++)
+    {
+        asshole.printSet(asshole, i);
+    }
+
+    set2.makeSet(50);
+    cout << "Version 2" << endl;
+    for (int i = 0; i < 50; i++)
+    {
+        set2.Union2(i, i+5);
+    }
+    for (int i = 0; i < 50; i++)
+    {
+        set2.printSet2(set2, i);
     }
 
     return 0;
