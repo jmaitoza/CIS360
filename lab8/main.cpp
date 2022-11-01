@@ -3,9 +3,27 @@
 #include <random>
 using namespace std;
 
+int medianOf3(int arr[3])
+{
+    int low = arr[0];
+    int high = arr[1];
+    int mid = arr[2];
+    if (low > high)
+        swap(low, high);
+    if (low > mid)
+        swap(low, mid);
+    if (mid > high)
+        swap(mid, high);
+    return mid;
+}
+
 int partition(int a[], int low, int high)
 {
-    int pivot = a[low]; //set pivot to first element in the array
+//    int pivot = a[low]; //set pivot to first element in the array
+    // set pivot to median of the 3
+    int middle = a[(low+high)/2];
+    int temp[3] = {a[low], a[high], middle};
+    int pivot = medianOf3(temp);
     int i = low+1;
     int j = high;
 
