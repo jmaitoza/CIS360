@@ -2,8 +2,24 @@
 #include <utility>
 #include <random>
 #include <iomanip>
+#include <chrono>
+#define SIZE 100000
 
 using namespace std;
+
+inline
+std::chrono::time_point<std::chrono::high_resolution_clock>
+now()
+{
+    return std::chrono::high_resolution_clock::now();
+}
+template <typename T>
+inline
+std::chrono::milliseconds::rep
+milliseconds(const T& t)
+{
+    return std::chrono::duration_cast<std::chrono::milliseconds>(t).count();
+}
 
 int medianOf3(int arr[3])
 {
@@ -84,9 +100,8 @@ void quicksort(int a[], int low, int high, int size)
 int main()
 {
     // create dynamic array
-    time_t start, end;
-    int size = 10;
-    int a[size];
+    // int size = 10;
+    int a[SIZE];
     std::random_device rd;
     std::mt19937 mt(rd());
     std::uniform_int_distribution<> dis(1, 100);
@@ -94,24 +109,21 @@ int main()
     for (int & i : a)
         i = dis(mt);
 
-    cout << "Unsorted array: ";
-    for (int &i : a)
-        std::cout << i << " ";
+//    cout << "Unsorted array: ";
+//    for (int &i : a)
+//        std::cout << i << " ";
 
-    start = time(&start);
-    ios_base::sync_with_stdio(false);
-    quicksort(a, 0, 9,size);
-    end = time(&end);
-    if (size > 10)
+    auto start_time = now();
+    quicksort(a, 0, 9, SIZE);
+    auto end_time = now();
+    if (SIZE > 10)
         cout << endl << "Quicksort called" << endl;
-    cout << "Sorted array: ";
-    for (int &i : a)
-        std::cout << i << " ";
+//    cout << "Sorted array: ";
+//    for (int &i : a)
+//        std::cout << i << " ";
+    unsigned long time_spent = milliseconds(end_time - start_time);
+    cout << endl << "Time spent: " << time_spent << " milliseconds" << endl;
 
-    auto time_taken = double(end - start);
-    cout << endl << "Time taken by program is : " << fixed
-         << time_taken << setprecision(5);
-    cout << " sec " << endl;
 
     return 0;
 }
