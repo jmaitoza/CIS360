@@ -3,23 +3,23 @@
 #include <random>
 #include <iomanip>
 #include <chrono>
-#define SIZE 100000
+#define SIZE 100
 
 using namespace std;
 
-inline
-std::chrono::time_point<std::chrono::high_resolution_clock>
-now()
-{
-    return std::chrono::high_resolution_clock::now();
-}
-template <typename T>
-inline
-std::chrono::milliseconds::rep
-milliseconds(const T& t)
-{
-    return std::chrono::duration_cast<std::chrono::milliseconds>(t).count();
-}
+//inline
+//std::chrono::time_point<std::chrono::high_resolution_clock>
+//now()
+//{
+//    return std::chrono::high_resolution_clock::now();
+//}
+//template <typename T>
+//inline
+//std::chrono::milliseconds::rep
+//milliseconds(const T& t)
+//{
+//    return std::chrono::duration_cast<std::chrono::milliseconds>(t).count();
+//}
 
 int medianOf3(int arr[3])
 {
@@ -83,6 +83,7 @@ void quicksort(int a[], int low, int high, int size)
 {
     if (low < high)
     {
+        int pivotpoint = partition(a, low, high);
         if (size <= 10)
         {
             cout << endl << "Insertion sort called" << endl;
@@ -90,7 +91,7 @@ void quicksort(int a[], int low, int high, int size)
         }
         else
         {
-            int pivotpoint = partition(a, low, high);
+
             quicksort(a, low, pivotpoint - 1,size);
             quicksort(a, pivotpoint + 1, high,size);
         }
@@ -113,17 +114,19 @@ int main()
 //    for (int &i : a)
 //        std::cout << i << " ";
 
-    auto start_time = now();
-    quicksort(a, 0, 9, SIZE);
-    auto end_time = now();
+    // start clock cycle time
+    auto start = chrono::steady_clock::now();
+    quicksort(a, 0, SIZE-1, SIZE);
+    // stop timer
+    auto stop = chrono::steady_clock::now();
+    auto duration = chrono::duration_cast<chrono::microseconds>(stop - start);
     if (SIZE > 10)
         cout << endl << "Quicksort called" << endl;
 //    cout << "Sorted array: ";
 //    for (int &i : a)
 //        std::cout << i << " ";
-    unsigned long time_spent = milliseconds(end_time - start_time);
-    cout << endl << "Time spent: " << time_spent << " milliseconds" << endl;
 
-
+    // print time spent
+    cout << endl << "Time spent: " << duration.count() << " microseconds" << endl;
     return 0;
 }
