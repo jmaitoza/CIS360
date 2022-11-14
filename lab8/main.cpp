@@ -7,19 +7,7 @@
 
 using namespace std;
 
-//inline
-//std::chrono::time_point<std::chrono::high_resolution_clock>
-//now()
-//{
-//    return std::chrono::high_resolution_clock::now();
-//}
-//template <typename T>
-//inline
-//std::chrono::milliseconds::rep
-//milliseconds(const T& t)
-//{
-//    return std::chrono::duration_cast<std::chrono::milliseconds>(t).count();
-//}
+/}
 
 int medianOf3(int arr[3])
 {

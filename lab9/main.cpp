@@ -56,7 +56,7 @@ int main()
 {
     int n = 6;
     int **directedDense = new int *[n];
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) //initialize matrix
     {
         directedDense[i] = new int[n];
         for (int j = 0; j < n; j++)
@@ -72,9 +72,23 @@ int main()
         }
     }
     int **undirectedSparse = new int *[n];
-    cout << "help me" << endl;
+    for (int i = 0; i < n; i++) //initialize matrix
+    {
+        undirectedSparse[i] = new int[n];
+        for (int j = 0; j < n; j++)
+        {
+            if (i == j)
+            {
+                undirectedSparse[i][j] = 0;
+            }
+            else
+            {
+                undirectedSparse[i][j] = 999;
+            }
+        }
+    }
 
-    //
+    // add edges to directed graph
     addEdgeDir(directedDense, 0, 1, 5);
     addEdgeDir(directedDense, 1, 0, 7);
 
@@ -90,8 +104,18 @@ int main()
     addEdgeDir(directedDense, 0, 3, 11);
 
     addEdgeDir(directedDense, 3, 5, 20);
-    cout << "part 2" << endl;
-    //print matrix
+
+    // add edges to undirected graph
+    addEdgeUnd(undirectedSparse, 0, 1, 5); // v1-v2 5
+    addEdgeUnd(undirectedSparse, 1, 2, 11);// v2-v3 11
+    addEdgeUnd(undirectedSparse, 2, 4, 4);// v3-v5 4
+    addEdgeUnd(undirectedSparse, 4, 1, 7);// v5-v2 7
+    addEdgeUnd(undirectedSparse, 4, 0, 3);// v5-v1 3
+    addEdgeUnd(undirectedSparse, 3, 0, 1);// v4-v1 1
+    addEdgeUnd(undirectedSparse, 3, 1, 5);// v4-v2 5
+    addEdgeUnd(undirectedSparse, 3, 5, 4);// v4-v6 4
+    addEdgeUnd(undirectedSparse, 5, 4, 4);// v6-v5 4
+    addEdgeUnd(undirectedSparse, 5, 2, 13);// v6-v3 13
 
 
     //floyd2 directed graph
@@ -106,11 +130,15 @@ int main()
     {
         P[i] = new int[n];
     }
-
+    //directedDense
     floyd2(n, directedDense, D, P);
-
-
-
     path(0, 5, P);
+    cout << endl;
+
+    //undirectedSparse
+    floyd2(n, undirectedSparse, D, P);
+    path(0, 5, P);
+
+
     return 0;
 }
