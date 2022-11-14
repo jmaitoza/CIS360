@@ -5,8 +5,10 @@ using namespace std;
 //int W; // total allowed weight
 
 
-void DP01Knapsack(int n, int W, int Profits[n], int Weights[n], int includedProfits, int omittedProfits)
+void DP01Knapsack(int n, int W, int Profits[n], int Weights[n])
 {
+    int includedProfits = 0;
+    int omittedProfits = 0;
     //initialization
     // P (n+1) x (W+1) matrix
     int P[n+1][W+1];
@@ -29,6 +31,49 @@ void DP01Knapsack(int n, int W, int Profits[n], int Weights[n], int includedProf
             }
             else
                 P[i+1][w] = P[i][w];
+        }
+    }
+    cout << "Included profit: " << includedProfits << endl;
+    cout << "Omitted profit: " << omittedProfits << endl;
+}
+
+void Greedy01Knapsack(int n, int W, int Profits[n], int Weights[n])
+{
+    int includedProfits = 0;
+    int omittedProfits = 0;
+    int PdivW[n];
+    int temp = 0;
+    // init P
+    int P[n+1][W+1];
+
+    for (int w = 0 ; w <= W ; w++)
+        P[0][w] = 0;
+    for (int i = 0 ; i <= n ; i++)
+        P[i][0] = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        PdivW[i] = Profits[i] / Weights[i];
+        cout << "PdivW[" << i << "]: " << PdivW[i] << endl;
+    }
+//    for (int i = 0; i < n; i++)
+//    {
+//        cout << PdivW[i] << " ";
+//    }
+    //sort the items by their profit/weight ratio with largest first
+    sort(PdivW, PdivW + n, greater<>());
+
+    for(int i=0; i<n; i++)
+    {
+        cout << "SortedPdivW[" << i << "]: "<< PdivW[i] << endl;
+    }
+
+    //for each item, if it fits, add it to the knapsack
+    for (int i = 0; i < n; i++)
+    {
+        if (PdivW[i] <= W)
+        {
+
         }
     }
     cout << "Included profit: " << includedProfits << endl;
@@ -70,7 +115,8 @@ int main()
     }
     cout << endl;
 
-    DP01Knapsack(n, W, Profits, Weights, 0, 0);
+//    DP01Knapsack(n, W, Profits, Weights);
+    Greedy01Knapsack(n, W, Profits, Weights);
 
 
     return 0;
