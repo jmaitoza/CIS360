@@ -1,4 +1,6 @@
 #include <iostream>
+#include <algorithm>
+
 using namespace std;
 
 //int n; // number of items
@@ -81,7 +83,10 @@ void Greedy01Knapsack(int n, int W, int Profits[n], int Weights[n])
 
 }
 
+void fracGreedy01Knapsack(int n, int W, int Profits[n], int Weights[n])
+{
 
+}
 
 int main()
 {
