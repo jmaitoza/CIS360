@@ -1,10 +1,12 @@
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
 using namespace std;
 
-//int n; // number of items
-//int W; // total allowed weight
+bool ratioCompare(pair <int, int> a, pair <int, int> b) {
+    return a.first > b.first;
+}
 
 
 void DP01Knapsack(int n, int W, int Profits[n], int Weights[n])
@@ -39,54 +41,40 @@ void DP01Knapsack(int n, int W, int Profits[n], int Weights[n])
     cout << "Omitted profit: " << omittedProfits << endl;
 }
 
-void Greedy01Knapsack(int n, int W, int Profits[n], int Weights[n])
+void fracKnapsack(int n, int W, vector<int> profits, vector<int> weights)
 {
     int includedProfits = 0;
     int omittedProfits = 0;
-    int PdivW[n];
-    int temp = 0;
-    // init P
-    int P[n+1][W+1];
 
-    for (int w = 0 ; w <= W ; w++)
-        P[0][w] = 0;
-    for (int i = 0 ; i <= n ; i++)
-        P[i][0] = 0;
+    vector<pair<int, int>> ratio(n, make_pair(0, 0)); // to store items by profit/weight
+    for (int i = 0; i < n; i++)
+    {
+        ratio[i] = make_pair((profits[i]/weights[i]), i);
+    }
+
+    //sort items by profit/weight
+    sort(ratio.begin(), ratio.end(), ratioCompare);
 
     for (int i = 0; i < n; i++)
     {
-        PdivW[i] = Profits[i] / Weights[i];
-        cout << "PdivW[" << i << "]: " << PdivW[i] << endl;
-    }
-//    for (int i = 0; i < n; i++)
-//    {
-//        cout << PdivW[i] << " ";
-//    }
-    //sort the items by their profit/weight ratio with largest first
-    sort(PdivW, PdivW + n, greater<>());
+        int v = ratio[i].second;
 
-    for(int i=0; i<n; i++)
-    {
-        cout << "SortedPdivW[" << i << "]: "<< PdivW[i] << endl;
-    }
-
-    //for each item, if it fits, add it to the knapsack
-    for (int i = 0; i < n; i++)
-    {
-        if (PdivW[i] <= W)
+        if (weights[v] <= W) // item does fit
         {
-
+            includedProfits += profits[v];
+            W -= weights[v];
+        }
+        else //item does not fit in bag
+        {
+            omittedProfits += profits[v] * (W/weights[v]);
+            W = 0;
         }
     }
     cout << "Included profit: " << includedProfits << endl;
     cout << "Omitted profit: " << omittedProfits << endl;
-
 }
 
-void fracGreedy01Knapsack(int n, int W, int Profits[n], int Weights[n])
-{
 
-}
 
 int main()
 {
@@ -95,9 +83,10 @@ int main()
     int W = 8;
     // Profits: list of n item profits (randomly generated)
     int Profits[] = {20, 30, 35};
-    // Weights: list of n item weights (randomly generated)
+//    // Weights: list of n item weights (randomly generated)
     int Weights[] {7, 3, 1};
-
+    vector <int> profits = {20, 30, 35};
+    vector <int> weights = {7, 3, 1};
     // test case
 
 //    for (int i = 0; i < n; i++)
@@ -121,7 +110,23 @@ int main()
     cout << endl;
 
 //    DP01Knapsack(n, W, Profits, Weights);
-    Greedy01Knapsack(n, W, Profits, Weights);
+    //Greedy01Knapsack(n, W, Profits, Weights);
+
+    //fracKnapsack
+    cout << "FracKnapsack" << endl;
+    cout << "Profits: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << Profits[i] << " ";
+    }
+    cout << endl;
+    cout << "Weights: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << Weights[i] << " ";
+    }
+    cout << endl;
+    fracKnapsack(n, W, profits, weights);
 
 
     return 0;
